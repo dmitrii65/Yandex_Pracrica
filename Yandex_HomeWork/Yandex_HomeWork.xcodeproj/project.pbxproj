@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142490652A2F4A0D00F05326 /* MovieQuizViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142490642A2F4A0D00F05326 /* MovieQuizViewController.swift.swift */; };
 		14837F932A18EE920099AC23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14837F922A18EE920099AC23 /* AppDelegate.swift */; };
 		14837F952A18EE920099AC23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14837F942A18EE920099AC23 /* SceneDelegate.swift */; };
-		14837F972A18EE920099AC23 /* FAIL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14837F962A18EE920099AC23 /* FAIL.swift */; };
 		14837F9C2A18EE930099AC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14837F9B2A18EE930099AC23 /* Assets.xcassets */; };
-		14837FA92A1A1B960099AC23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14837FA82A1A1B960099AC23 /* MainViewController.swift */; };
+		14837FAF2A1F812B0099AC23 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14837FAE2A1F812B0099AC23 /* Launch Screen.storyboard */; };
+		14A668572A4855000026D0F2 /* Etextention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A668562A4855000026D0F2 /* Etextention.swift */; };
+		14A6685B2A48566A0026D0F2 /* YSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A668592A48566A0026D0F2 /* YSDisplay-Bold.ttf */; };
+		14A6685C2A48566A0026D0F2 /* YSDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14A6685A2A48566A0026D0F2 /* YSDisplay-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142490642A2F4A0D00F05326 /* MovieQuizViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizViewController.swift.swift; sourceTree = "<group>"; };
 		14837F8F2A18EE920099AC23 /* Yandex_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yandex_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14837F922A18EE920099AC23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14837F942A18EE920099AC23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14837F962A18EE920099AC23 /* FAIL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAIL.swift; sourceTree = "<group>"; };
 		14837F9B2A18EE930099AC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14837FA02A18EE930099AC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14837FA82A1A1B960099AC23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14837FAE2A1F812B0099AC23 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		14A668562A4855000026D0F2 /* Etextention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etextention.swift; sourceTree = "<group>"; };
+		14A668592A48566A0026D0F2 /* YSDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		14A6685A2A48566A0026D0F2 /* YSDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSDisplay-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		14837F862A18EE920099AC23 = {
 			isa = PBXGroup;
 			children = (
+				14837FAE2A1F812B0099AC23 /* Launch Screen.storyboard */,
 				14837F912A18EE920099AC23 /* Yandex_HomeWork */,
 				14837F902A18EE920099AC23 /* Products */,
 			);
@@ -54,14 +61,24 @@
 		14837F912A18EE920099AC23 /* Yandex_HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				14A668582A48561D0026D0F2 /* Font */,
+				14A668562A4855000026D0F2 /* Etextention.swift */,
 				14837F922A18EE920099AC23 /* AppDelegate.swift */,
 				14837F942A18EE920099AC23 /* SceneDelegate.swift */,
-				14837FA82A1A1B960099AC23 /* MainViewController.swift */,
-				14837F962A18EE920099AC23 /* FAIL.swift */,
+				142490642A2F4A0D00F05326 /* MovieQuizViewController.swift.swift */,
 				14837F9B2A18EE930099AC23 /* Assets.xcassets */,
 				14837FA02A18EE930099AC23 /* Info.plist */,
 			);
 			path = Yandex_HomeWork;
+			sourceTree = "<group>";
+		};
+		14A668582A48561D0026D0F2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				14A6685A2A48566A0026D0F2 /* YSDisplay-Medium.ttf */,
+				14A668592A48566A0026D0F2 /* YSDisplay-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14837FAF2A1F812B0099AC23 /* Launch Screen.storyboard in Resources */,
+				14A6685C2A48566A0026D0F2 /* YSDisplay-Medium.ttf in Resources */,
+				14A6685B2A48566A0026D0F2 /* YSDisplay-Bold.ttf in Resources */,
 				14837F9C2A18EE930099AC23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,10 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14837F972A18EE920099AC23 /* FAIL.swift in Sources */,
 				14837F932A18EE920099AC23 /* AppDelegate.swift in Sources */,
+				14A668572A4855000026D0F2 /* Etextention.swift in Sources */,
 				14837F952A18EE920099AC23 /* SceneDelegate.swift in Sources */,
-				14837FA92A1A1B960099AC23 /* MainViewController.swift in Sources */,
+				142490652A2F4A0D00F05326 /* MovieQuizViewController.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +287,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yandex_HomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -294,7 +314,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yandex_HomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
