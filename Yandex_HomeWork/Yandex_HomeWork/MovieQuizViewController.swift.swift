@@ -142,6 +142,7 @@ final class MovieQuizViewController: UIViewController {
         let cinemaImage = UIImageView()
         cinemaImage.layer.cornerRadius = 20
         cinemaImage.clipsToBounds = true
+        cinemaImage.contentMode = .scaleAspectFill
         cinemaImage.translatesAutoresizingMaskIntoConstraints = false
         return cinemaImage
     }()
@@ -253,14 +254,18 @@ final class MovieQuizViewController: UIViewController {
             
             NSLayoutConstraint.activate([
                 numberQuestion.topAnchor.constraint(equalTo: view.topAnchor, constant: 54),
-                numberQuestion.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+                numberQuestion.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                numberQuestion.bottomAnchor.constraint(equalTo: cinemaImageView.topAnchor, constant: -20)
             ])
             
             NSLayoutConstraint.activate([
                 questionLable.topAnchor.constraint(equalTo: view.topAnchor, constant: 54),
-                questionLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+                questionLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                questionLable.bottomAnchor.constraint(equalTo: cinemaImageView.topAnchor, constant: -20)
             ])
             NSLayoutConstraint.activate([
+                cinemaImageView.widthAnchor.constraint(equalTo: cinemaImageView.heightAnchor, multiplier: 2/3),
+
                 cinemaImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
                 cinemaImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
                 cinemaImageView.widthAnchor.constraint(equalToConstant: 335),
@@ -270,27 +275,24 @@ final class MovieQuizViewController: UIViewController {
                 
             ])
             NSLayoutConstraint.activate([
-                questionTextLable.bottomAnchor.constraint(equalTo: noButton.topAnchor, constant: -33),
+                questionTextLable.topAnchor.constraint(equalTo: cinemaImageView.bottomAnchor, constant: 33),
                 questionTextLable.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -62),
-                questionTextLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 62)
+                questionTextLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 62),
+                questionTextLable.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
             NSLayoutConstraint.activate([
-                noButton.topAnchor.constraint(equalTo: questionTextLable.bottomAnchor, constant: -33),
-                noButton.trailingAnchor.constraint(equalTo: yesButton.leadingAnchor, constant: -20),
                 noButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-                noButton.heightAnchor.constraint(equalToConstant: 60),
-                noButton.widthAnchor.constraint(equalToConstant: 157),
-               
+               noButton.heightAnchor.constraint(equalToConstant: 60),
+                noButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -34),
             ])
             NSLayoutConstraint.activate([
-                yesButton.topAnchor.constraint(equalTo: questionTextLable.bottomAnchor, constant: 33),
-                yesButton.leadingAnchor.constraint(equalTo: noButton.trailingAnchor, constant: -20),
                 yesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-                yesButton.heightAnchor.constraint(equalToConstant: 60),
-                yesButton.widthAnchor.constraint(equalToConstant: 158),
-                
+                yesButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -34),
+                yesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                yesButton.leadingAnchor.constraint(equalTo: noButton.trailingAnchor, constant: 20),
+                yesButton.widthAnchor.constraint(equalTo: noButton.widthAnchor, multiplier: 1),
+                yesButton.heightAnchor.constraint(equalTo: noButton.heightAnchor, multiplier: 1)
             ])
-            
         }
     }
 

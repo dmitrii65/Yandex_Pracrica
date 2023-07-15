@@ -11,17 +11,22 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="1 (375x812)" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-87-7wd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="7Dt-vz-HFM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="7Dt-vz-HFM" secondAttribute="top" id="Uri-L7-VL3"/>
+                            <constraint firstAttribute="leading" secondItem="7Dt-vz-HFM" secondAttribute="leading" id="VXs-AG-5hk"/>
+                            <constraint firstItem="7Dt-vz-HFM" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="VvA-sj-YI0"/>
+                            <constraint firstItem="7Dt-vz-HFM" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="kRC-7k-Tym"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1 (375x812)" width="375" height="812"/>
+        <image name="Background" width="125" height="270.66665649414062"/>
     </resources>
 </document>
